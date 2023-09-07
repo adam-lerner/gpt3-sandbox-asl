@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: rgb(55, 55, 55);
+  font-family: sans-serif;
+}
+
+/* 
+Navbar CSS
+*/
+
+#navbar {
+  background-image: url("./images/evgeni-evgeniev-LPKk3wtkC-g-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  display: flex;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 100;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+#menu {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  width: 500px;
+}
+#navbar h1 {
+  font-family: "Averia Serif Libre", cursive;
+  color: rgb(255, 255, 255);
+  padding: 8px 8px 8px 8px;
+  margin: 0 0 0 0;
+}
+
+.navbaritem {
+  color: rgb(255, 255, 255);
+  font-family: "Averia Serif Libre", cursive;
+}
+
+.navbaritem:hover {
+  color: rgb(199, 150, 245);
+  cursor: pointer;
+}
+/*
+QuestBoard
+*/
+
+#questboard {
+  position: relative;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#questmenu {
+  display: flex;
+  height: 50px;
+  background-color: rgb(143, 143, 143);
+  width: 100%;
+  align-items: center;
+  font-family: "Roboto Condensed", sans-serif;
+  justify-content: space-between;
+}
+
+#newquest {
+  border-radius: 20px;
+  height: 35px;
+  margin-left: 5px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: rgb(0, 0, 0);
+  background-color: rgb(221, 221, 221);
+  border: none;
+  cursor: pointer;
+}
+
+#newquest:hover {
+ background-color:rgb(199, 150, 245)
+}
+
+#sort {
+  display: flex;
+  height: 35px;
+  padding: 0 20px 0 20px;
+  align-items: center;
+  gap: 5px;
+  background-color: rgb(221, 221, 221);
+  border-radius: 20px;
+  margin-right: 5px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+
+/* 
+QuestBlock
+*/
+
+
+.baseblock {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  background-color: brown;
+  padding: 8px 8px 8px 8px;
+  border-radius: 8px;
+  box-shadow: 2px 3px 3px rgb(20, 20, 20);
+}
+
+.leftblockpanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 5px;
+  padding: 5px;
+}
+
+#title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#title img {
+  height: 30px;
+}
+
+#title h2 {
+  margin: 5px;
+  color: white;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+#challengerating {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  align-items: center;
+  height: 18px;
+}
+
+#duedate {
+  height: 60px;
+  border-radius: 5px;
+  background: rgba(193, 193, 193, 0.3);
+}
+
+#type {
+  height: 60px;
+  border-radius: 5px;
+  background: rgba(193, 193, 193, 0.3);
+}
+
+.rightblockpanel {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  gap: 5px;
+}
+
+#log {
+  border-radius: 5px;
+  background: rgba(193, 193, 193, 0.3);
+  flex-basis: 50%;
+  height: 98%;
+}
+
+#notes {
+  border-radius: 5px;
+  background: rgba(193, 193, 193, 0.3);
+  flex-basis: 50%;
+  height: 98%;
+}
+
+#blockellmenu {
+  border-radius: 5px;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.1) 1px,
+    transparent 1px,
+    transparent 6px
+  );
+  background-size: 4px 4px;
+  flex-basis: 2%;
+  height: 98%;
+}
+
+.blockpaneltitle {
+  position: relative;
+  top: 2px;
+  left: 5px;
+  margin-top: 0px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: small;
+  color: rgb(255, 255, 255);
+}

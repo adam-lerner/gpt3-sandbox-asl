@@ -61,7 +61,8 @@ Navbar
 .newquestmodal {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
+  gap: 20px;
   width: 65%;
   height: 65%;
   background: ghostwhite;
@@ -102,13 +103,13 @@ Navbar
   color: rgb(199, 150, 245);
 }
 
-.modaltitle {
+.modaltitletype {
   display: flex;
   gap: 10px;
 }
 
-.modaltitle input {
-  width: 80%;
+.modaltitletype input {
+  width: 70%;
 }
 
 .modaldate {
@@ -116,6 +117,10 @@ Navbar
   gap: 10px;
 }
 
+.modalcr {
+  display: flex;
+  gap: 10px;
+}
 
 /*
 QuestBoard

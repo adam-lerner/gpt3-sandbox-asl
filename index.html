@@ -27,11 +27,61 @@
       <div id="menu">
         <a class="navbaritem"><span>&#129497;&#127997;</span> Quest Board</a>
         <a class="navbaritem"><span>&#128214;</span> Archive</a>
-        <a class="navbaritem"><span>&#127984;</span> Academy</a>
-        <a class="navbaritem"><span>&#128176;</span> Market</a>
       </div>
     </div>
 
+
+    <!--NewQuest Modal-->
+    <div class="newquestmodal">
+      <div class="modalheader"> 
+        <h2>New Quest</h2>
+        <p>X</p>
+      </div>
+      <div class="modaltitle">
+        <p>Title</p>
+        <input/>
+      </div>
+      <div>
+        <p>Challenge Rating</p>
+        <select>
+          <option value="">-Select-</option>
+          <option value="crlevel1">⭐ - 1 - Trivial</option>
+          <option value="crlevel2">⭐⭐ - 2 - Very Easy</option>
+          <option value="crlevel3">⭐⭐⭐ - 3 - Easy</option>
+          <option value="crlevel4">⭐⭐⭐⭐ - 4 - Easy Normal</option>
+          <option value="crlevel5">⭐⭐⭐⭐⭐ - 5 - Normal</option>
+          <option value="crlevel6">⭐⭐⭐⭐⭐⭐ - 6 - Hard Normal</option>
+          <option value="crlevel7">⭐⭐⭐⭐⭐⭐⭐ - 7 - Hard</option>
+          <option value="crlevel8">⭐⭐⭐⭐⭐⭐⭐⭐ - 8 - Very Hard</option>
+          <option value="crlevel9">⭐⭐⭐⭐⭐⭐⭐⭐⭐ - 9 - Extremely Hard</option>
+          <option value="crlevel10">⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ - 10 -  Nearly Impossible</option>
+        </select>
+      </div>
+      <div class="modaldate">
+        <p>Due Date</p>
+        <input type="date"/>
+      </div>
+      <div class="modaltype">
+        <p>Type</p>
+        <select>
+          <option value="">-Select-</option>
+          <option value="questname">Exploration</option>
+          <option value="challengerating">Construction</option>
+        </select>
+      </div>
+
+      <p>Log</p>
+      <p>Notes</p>
+      <textarea></textarea>
+      <div class="modalbuttons">
+        <button>Cancel</button>
+        <button>Begin Quest</button> 
+      </div>
+     
+    </div>
+    <div class="newquestoverlay">
+
+    </div>
     <!--QuestBoard and QuestBlocks-->
     <div id="questboard">
       <div id="questmenu">

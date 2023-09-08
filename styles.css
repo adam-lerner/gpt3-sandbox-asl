@@ -13,7 +13,7 @@ html {
 }
 
 /* 
-Navbar CSS
+Navbar
 */
 
 #navbar {
@@ -33,9 +33,9 @@ Navbar CSS
 
 #menu {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   gap: 20px;
-  width: 500px;
+  width: 30%;
 }
 #navbar h1 {
   font-family: "Averia Serif Libre", cursive;
@@ -53,6 +53,70 @@ Navbar CSS
   color: rgb(199, 150, 245);
   cursor: pointer;
 }
+/*NewQuest Modal*/
+.modalhide {
+  display: none;
+}
+
+.newquestmodal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 65%;
+  height: 65%;
+  background: ghostwhite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  font-family: 'Roboto Condensed', sans-serif;
+  padding: 5px 5px 5px 5px;
+  border-radius: 5px;
+  box-shadow: 2px 3px 10px rgb(20, 20, 20);
+}
+
+.newquestmodal p {
+  margin: 5px 0 5px 5px;
+}
+.modalbuttons {
+  display: flex;
+}
+
+.modalheader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modalheader h2 {
+  margin: 5px 0px 0px 5px;
+}
+
+.modalheader p {
+  margin: 5px 8px 0px 0px;
+}
+
+.modalheader p:hover {
+  color: rgb(199, 150, 245);
+}
+
+.modaltitle {
+  display: flex;
+  gap: 10px;
+}
+
+.modaltitle input {
+  width: 80%;
+}
+
+.modaldate {
+  display: flex;
+  gap: 10px;
+}
+
+
 /*
 QuestBoard
 */
@@ -87,7 +151,7 @@ QuestBoard
 }
 
 #newquest:hover {
- background-color:rgb(199, 150, 245)
+  background-color: rgb(199, 150, 245);
 }
 
 #sort {
@@ -103,13 +167,12 @@ QuestBoard
 }
 
 select {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 /* 
 QuestBlock
 */
-
 
 .baseblock {
   display: grid;
